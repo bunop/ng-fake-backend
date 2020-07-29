@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  teams$ = this.http.get('http://localhost:3000/api/teams');
+  teams$ = this.http.get('/api/teams');
 
   constructor(private http: HttpClient) {}
 }
